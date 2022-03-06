@@ -1,0 +1,84 @@
+.minimapContainer{
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 0 15px;
+    height: 80px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.leftPole{
+    position: absolute;
+    left: 5%;
+    background-color: rgb(156, 43, 14);
+    width: 5%;
+    height: 100%;
+}
+
+.rightPole{
+    position: absolute;
+    left: 90%;
+    background-color: rgb(156, 43, 14);
+    width: 5%;
+    height: 100%;
+}
+
+.wire{
+    position: absolute;
+    background-color: rgb(182, 182, 182);
+    height: 5%;
+    width: 80%;
+    left: 10%; 
+    top: 25%;
+}
+
+.dark{
+    background-color: black;
+    left: 25%;
+    width: 60%;
+}
+
+.dot{
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    top: 15%;
+}
+
+.leftLim{
+    left: 25%;
+}
+
+.rightLim{
+    right: 15%;
+}
+
+.dock{
+    left: 12%;
+    background-color: #00ADEF;
+}
+
+
+text{
+    position: absolute;
+    bottom: 20%;
+}
+
+.dock_text{
+    left: 12%
+}
+
+.patrol_text{
+    right: 35%;
+}
+
+.arrow{
+    height: 60%;
+}
+
+.flipped{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}

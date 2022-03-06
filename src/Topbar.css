@@ -1,0 +1,25 @@
+.topbarContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.outerContainer{
+    background-color: white;
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    width: 75%;
+    
+}
+
+.logo2{
+    width: 15%;
+    height: 15%;
+}

@@ -1,0 +1,22 @@
+.body{
+  font-family: 'Roboto', sans-serif;
+  background-color: lightgray;
+}
+
+html, body, #app, #app>div, #root, .container{
+  margin:0px;
+  height: 100%;
+  background-color: lightgray;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* .botbar {
+  position: fixed;
+  bottom: 0
+} */
