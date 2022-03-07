@@ -7,10 +7,9 @@ function Rawdata(props) {
 
   return (
     <div className="RawdataContainer">
-        <h3>Raw Data Feed</h3>
         <table className="dataTable">
             <tr>
-              <th>Label</th>
+              <th>Raw Data Feed</th>
               <th>Value</th>
               <th>Units</th>
             </tr>

@@ -6,6 +6,7 @@ import Rawdata from './Rawdata';
 import Topbar from './Topbar';
 import Robotstate from './Robotstate';
 import Minimap from './Minimap';
+import Robot from './Robot';
 
 function App() {
   const [voltage, setVoltage] = useState(0);
@@ -54,7 +55,8 @@ function App() {
   return (
     <div className='container'>
       <Topbar/>
-      <Robotstate state={state}/>
+      <Robot voltage={voltage} frontRF={frontRF} backRF={backRF} state={state}/>
+      {/* <Robotstate state={state}/> */}
       <Minimap speed={speed} encoder={encoder}/>
       <Rawdata
       voltage={voltage}

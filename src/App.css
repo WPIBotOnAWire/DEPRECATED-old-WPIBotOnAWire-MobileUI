@@ -10,9 +10,10 @@ html, body, #app, #app>div, #root, .container{
 }
 
 .container{
+  padding-top: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   gap: 10px;
 }
 

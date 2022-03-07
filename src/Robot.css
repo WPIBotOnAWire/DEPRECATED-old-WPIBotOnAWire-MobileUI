@@ -1,0 +1,32 @@
+.robotContainer{
+    position: relative;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 15px;
+    padding-top: 10px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+img{
+    width: 100%;
+}
+
+.batterySquare{
+    position: absolute;
+    /* 0 -> 75 */
+    width: 25px; 
+    height: 20px;
+    /* 78 -> 82*/
+    bottom: 79px;
+    left: 174px;
+    background: rgba(0, 200, 0, 0.8);
+    transform: skewY(-7deg);
+}
+
+h2{
+    margin: 10px;
+}

@@ -10,7 +10,7 @@
 .leftPole{
     position: absolute;
     left: 5%;
-    background-color: rgb(156, 43, 14);
+    background-color: rgb(128, 62, 45);
     width: 5%;
     height: 100%;
 }
@@ -18,7 +18,7 @@
 .rightPole{
     position: absolute;
     left: 90%;
-    background-color: rgb(156, 43, 14);
+    background-color: rgb(128, 62, 45);
     width: 5%;
     height: 100%;
 }
