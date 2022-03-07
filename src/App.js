@@ -19,6 +19,7 @@ function App() {
   const [led, setLed] = useState(false);
   const [manual, setManual] = useState(false);
   const [state, setState] = useState("No Connection");
+  const [switchMsg, setSwtichMsg] = useState(false);
 
   useEffect(() => {
     window.battery_listener.subscribe(function(message) {
@@ -49,6 +50,9 @@ function App() {
     window.robot_state_listener.subscribe(function(message) {
       setState(message.data);
     });
+    window.switch_listener.subscribe(function(message) {
+      setSwtichMsg(message.data);
+    });
 
   }, []); //Run only once
 
@@ -69,6 +73,7 @@ function App() {
       led={led}
       manual={manual}
       state={state}
+      switchMsg={switchMsg}
       />
       <EStop className='botBar'/>
     </div>

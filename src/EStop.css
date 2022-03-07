@@ -8,7 +8,6 @@
 button{
     position: fixed;
     bottom: 0px;
-    background-color: red; /* Green */
     border: none;
     width: 100%;
     color: white;
@@ -22,6 +21,16 @@ button{
     /* border-radius: 10px;    */
 }
 
-button:active{
+.red{
+    background-color: red; /* Green */
+}
+.red:active{
     background-color:darkred;
+}
+
+.green{
+    background-color: green; /* Green */
+}
+.green:active{
+    background-color:darkgreen;
 }

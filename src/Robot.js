@@ -6,7 +6,9 @@ function Robot(props) {
   return (
     <div className='robotContainer'> 
       <img src={robot_1} />
-      <div className='batterySquare'/>
+      <div className='batterySquare'>
+        99%
+      </div>
       {/* <h2>{props.voltage}</h2>
       <h2>{props.backRF}</h2>
       <h2>{props.frontRF}</h2> */}

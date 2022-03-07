@@ -59,6 +59,11 @@ function Rawdata(props) {
               <td></td>
             </tr>
             <tr>
+              <td>Virtual Switch</td>
+              <td>{props.switchMsg ? "Enabled":"Disabled"}</td>
+              <td></td>
+            </tr>
+            <tr>
               <td>Robot State</td>
               <td>{props.state}</td>
               <td></td>
