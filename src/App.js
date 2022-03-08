@@ -39,10 +39,10 @@ function App() {
       setSpeed(message.data);
     });
     window.deterrents_led_listener.subscribe(function(message) {
-      setSound(message.data);
+      setLed(message.data);
     });
     window.play_sound_listener.subscribe(function(message) {
-      setLed(message.data);
+      setSound(message.data);
     });
     window.manual_override_listener.subscribe(function(message) {
       setManual(message.data);
@@ -59,7 +59,7 @@ function App() {
   return (
     <div className='container'>
       <Topbar/>
-      <Robot voltage={voltage} frontRF={frontRF} backRF={backRF} state={state}/>
+      <Robot voltage={voltage} frontRF={frontRF} backRF={backRF} state={state} current={current}/>
       {/* <Robotstate state={state}/> */}
       <Minimap speed={speed} encoder={encoder}/>
       <Rawdata
@@ -75,7 +75,7 @@ function App() {
       state={state}
       switchMsg={switchMsg}
       />
-      <EStop className='botBar'/>
+      <EStop className='botBar' manual={manual}/>
     </div>
     
   );

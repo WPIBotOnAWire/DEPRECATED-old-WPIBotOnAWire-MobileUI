@@ -34,3 +34,7 @@ button{
 .green:active{
     background-color:darkgreen;
 }
+
+.yellow{
+    background-color: rgb(122, 122, 0); /* Green */
+}
