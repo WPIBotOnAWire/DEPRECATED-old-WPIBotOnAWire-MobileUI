@@ -29,7 +29,7 @@ button{
 }
 
 .green{
-    background-color: green; /* Green */
+    background-color: #00b13f; /* Green */
 }
 .green:active{
     background-color:darkgreen;
