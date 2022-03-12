@@ -71,8 +71,8 @@ function Robot(props) {
   const [frontRFVals, setFrontRFVals] = useState([0])
   const [filteredFrontRF, setFilteredFrontRF] = useState(0) 
 
-  const voltageLowLimit = 15120; //in mV
-  const voltageHighLimit = 15300; //in mV
+  const voltageLowLimit = 15080; //in mV
+  const voltageHighLimit = 15310; //in mV
   let batteryPercentRaw = clamp(Math.round(scale(props.voltage,voltageLowLimit,voltageHighLimit,0,100)),0,100);
 
   let r_frontRF = Math.round(props.frontRF);
@@ -89,6 +89,7 @@ function Robot(props) {
     setFilteredFrontRF(median(frontRFVals));
     setBackRFVals([r_backRF, ...backRFVals].slice(0,10));
     setFileteredBackRF(median(backRFVals));
+    console.log(batteryPercent)
   },[props.voltage]);
 
 
